@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	transition: all 0.5s ease;
+	font-family: "Fira Sans";
+}
+
+body {
+	background: #E4DFDA;
+}
+
+main {
+	margin: auto;
+	background: #E4DFDA;
+	height: auto;
+	min-height: 100vh;
+	width: 90%;
+}
+
+section {
+	width: 100%;
+	background: #48A9A6;
+	padding: 1rem 0  1rem;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 2rem;
+}
+
+section:hover, img:not(.prout):hover {
+	box-shadow: 0 0 2em grey;
+}
+
+h2 {
+	margin-bottom: 1rem;
+}
+
+img:not(.prout) {
+	width: 50%;
+	border-radius: 50%;
+}
+
+section:first-of-type {
+	border-radius: 0rem 0rem 2rem 2rem;
+}
+
+section:last-of-type {
+	border-radius: 2rem 2rem 0rem 0rem;
+}
+
+section:last-of-type div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 0rem;
+	width: 30%;
+}
+
+p {
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	text-align: justify;
+}
+
+img.prout {
+	border-radius: 50%;
+	/*border: 0.5rem solid #E4DFDA;*/
+	width: 3rem;
+	border-radius: 0%;
+}
+
+
+img.prout:hover {
+	cursor: pointer;
+}
+
+button {
+	background: transparent;
+	border: none;
+}
+
+@media only screen and (max-width: 600px) {
+	main {
+	  	width: 100%;
+	}
+
+	section {
+	  	border-radius: 1rem;
+	}
+
+	section:first-of-type {
+		border-radius: 0rem 0rem 1rem 1rem;
+	}
+
+	section:last-of-type {
+		border-radius: 1rem 1rem 0rem 0rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+  	width: 80%;
+  }
+}
